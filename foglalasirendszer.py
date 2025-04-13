@@ -56,10 +56,9 @@ class FoglalasiRendszer:
             print(f"Foglalások sikeresen elmentve: {fajlnev}")
 
     def ossz_bevetel(self):
-        osszeg = sum(foglalas.jarat.jegyar for foglalas in self.foglalasok)
-        print(f"\nÖsszes bevétel: {osszeg} Ft")
-        return osszeg
-
+         osszeg = sum(foglalas.jarat.jegyar for foglalas in self.foglalasok)
+             print(f"\nÖsszes bevétel: {osszeg} Ft")
+             return osszeg
 
         if not statisztika:
             print("Nincs egyetlen foglalás sem.")
