@@ -41,6 +41,20 @@ class FoglalasiRendszer:
             else:
                 statisztika[jaratszam] = 1
 
+    def foglalasok_mentese_csv(self, fajlnev="foglalasok.csv"):
+         import csv
+        with open(fajlnev, mode="w", newline='', encoding='utf-8') as file:
+             writer = csv.writer(file)
+             writer.writerow(["utas_nev", "jaratszam", "celallomas", "jegyar"])
+             for foglalas in self.foglalasok:
+                 writer.writerow([
+                    foglalas.utas_nev,
+                    foglalas.jarat.jaratszam,
+                    foglalas.jarat.celallomas,
+                    foglalas.jarat.jegyar
+                    ])
+            print(f"Foglalások sikeresen elmentve: {fajlnev}")
+
         if not statisztika:
             print("Nincs egyetlen foglalás sem.")
         else:
