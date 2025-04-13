@@ -30,7 +30,7 @@ def main():
         print("4. Foglalások listázása")
         print("5. Járatonkénti foglalás statisztika")
         print("6. Foglalások mentése fájlba")
-
+        print("7. Összes jegybevétel megtekintése")
         print("0. Kilépés")
         valasztas = input("Válassz egy műveletet: ")
 
@@ -50,6 +50,8 @@ def main():
             rendszer.foglalasok_jaratonkent()
         elif valasztas == "6":
             rendszer.foglalasok_mentese_csv()
+        elif valasztas == "7":
+            rendszer.ossz_bevetel()
         elif valasztas == "0":
             print("Kilépés...")
             break
