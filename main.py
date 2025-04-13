@@ -28,6 +28,7 @@ def main():
         print("2. Jegy foglalása")
         print("3. Foglalás lemondása")
         print("4. Foglalások listázása")
+        print("5. Járatonkénti foglalás statisztika")
         print("0. Kilépés")
         valasztas = input("Válassz egy műveletet: ")
 
@@ -43,6 +44,8 @@ def main():
             rendszer.foglalas_lemondasa(nev, jaratszam)
         elif valasztas == "4":
             rendszer.foglalasok_listazasa()
+        elif valasztas == "5":
+            rendszer.foglalasok_jaratonkent()
         elif valasztas == "0":
             print("Kilépés...")
             break
