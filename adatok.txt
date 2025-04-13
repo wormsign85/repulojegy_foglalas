@@ -1,3 +1,8 @@
 Név: Király Attila
 Szak: Gazdaságinformatikus
 Neptun kód: D12H4E
+
+Extrák:
+5. pont - foglalások száma járatonként
+6. pont - foglalások exportálása .csv-be
+7. pont - Összes jegybevétel megtekintése
